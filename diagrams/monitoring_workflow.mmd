@@ -1,0 +1,10 @@
+sequenceDiagram
+    participant UI as Dashboard
+    participant SM as SystemMonitor
+    participant PS as psutil
+    participant Log as CSV Logger
+    UI->>SM: sample()
+    SM->>PS: CPU, memory, disk, processes
+    PS-->>SM: metrics
+    SM-->>UI: snapshot
+    UI->>Log: append(snapshot)

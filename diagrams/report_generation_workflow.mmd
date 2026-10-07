@@ -1,0 +1,6 @@
+flowchart LR
+    H[Monitoring history] --> A[Analytics result]
+    A --> CSV[Export CSV]
+    A --> PDF[Create PDF health report]
+    CSV --> User[User submission or review]
+    PDF --> User

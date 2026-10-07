@@ -1,0 +1,7 @@
+flowchart TD
+    Start([Start application]) --> Sample[Sample resources]
+    Sample --> Log[Log snapshot]
+    Log --> Analyze[Run analytics]
+    Analyze --> Render[Update dashboard]
+    Render --> Wait[Wait three seconds]
+    Wait --> Sample

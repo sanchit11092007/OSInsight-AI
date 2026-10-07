@@ -1,0 +1,9 @@
+flowchart TB
+    subgraph Host[Local Host]
+      P[Processes] --> M[psutil Monitor]
+      C[CPU Memory Disk] --> M
+    end
+    M --> L[CSV Logger]
+    L --> A[Analytics Engine]
+    A --> D[CustomTkinter Dashboard]
+    A --> E[PDF and CSV Export]

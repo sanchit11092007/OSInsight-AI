@@ -1,0 +1,6 @@
+flowchart LR
+    Collect[Collect telemetry] --> Validate[Validate and normalize]
+    Validate --> Store[Append monitoring history]
+    Store --> Model[Forecast CPU and memory]
+    Model --> Assess[Score health and detect bottlenecks]
+    Assess --> Present[Dashboard and report]

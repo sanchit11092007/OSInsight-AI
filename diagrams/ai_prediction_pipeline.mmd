@@ -1,0 +1,7 @@
+flowchart LR
+    H[Recent CSV history] --> Clean[Convert and clip values]
+    Clean --> Features[Sequential sample index]
+    Features --> LR[Linear regression]
+    LR --> Forecast[Next CPU and memory estimate]
+    Forecast --> Rules[Threshold rules]
+    Rules --> Recommendation[Health score and advice]
