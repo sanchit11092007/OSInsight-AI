@@ -2,6 +2,7 @@ __pycache__/
 *.py[cod]
 .venv/
 data/*.csv
+!data/sample_monitoring_history.csv
 models/*.joblib
 reports/*.csv
 reports/*.pdf
