@@ -1,0 +1,8 @@
+[project]
+name = "osinsight-ai"
+version = "1.0.0"
+description = "Local AI-powered operating-system performance analyzer"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
