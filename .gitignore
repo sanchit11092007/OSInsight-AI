@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+data/*.csv
+models/*.joblib
+reports/*.csv
+reports/*.pdf
+screenshots/*.png
+.artifact-build/
+.codex-finalizer/
